@@ -283,6 +283,151 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wobegoone.github.io/blog/blog/2017/08/07/daily/sequelize对象返回/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Baoman Wu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="圈圈的世界">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/2017/08/07/daily/sequelize对象返回/" itemprop="url">sequelize对象返回</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-07T12:30:08+08:00">
+                2017-08-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/每日一问/" itemprop="url" rel="index">
+                    <span itemprop="name">每日一问</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="question"><a href="#question" class="headerlink" title="question"></a>question</h2><p>情景：sequelize返回result没有新增的对象<br><figure class="highlight sqf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">userList.<span class="keyword">forEach</span>((<span class="variable">_u</span>) =&gt; &#123;</div><div class="line">    <span class="variable">_u</span>.cellNo = <span class="string">'*'</span></div><div class="line">    let tempCount = <span class="number">0</span></div><div class="line">    contactList.<span class="keyword">forEach</span>((contactItem)=&gt;&#123;</div><div class="line">        <span class="keyword">if</span>(contactItem.userId == <span class="variable">_u</span>.id)&#123;</div><div class="line">            tempCount++;</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line">    <span class="variable">_u</span>.contactCount = tempCount;</div><div class="line">&#125;)</div><div class="line">result.<span class="built_in">list</span> = userList;</div></pre></td></tr></table></figure></p>
+<p>提问：为什么result.list中有contactCount但是接口中没有返回</p>
+<h2 id="answer"><a href="#answer" class="headerlink" title="answer"></a>answer</h2><p>回答：需改写成 _u.dataValues.contactCount = tempCount;</p>
+<h2 id="knowleadge"><a href="#knowleadge" class="headerlink" title="knowleadge"></a>knowleadge</h2><p>sequlize接口返回的数据，存放在dataValues中</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://wobegoone.github.io/blog/blog/2017/08/06/code/code/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -776,7 +921,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/blog/">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -798,7 +943,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
