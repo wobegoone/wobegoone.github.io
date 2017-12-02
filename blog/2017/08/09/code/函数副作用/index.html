@@ -78,7 +78,7 @@
 <link href="/blog/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="js," />
 
 
 
@@ -94,16 +94,18 @@
 
 
 
-<meta name="description" content="一生倏忽，一世渺然">
-<meta property="og:type" content="website">
-<meta property="og:title" content="圈圈的世界">
-<meta property="og:url" content="http://wobegoone.github.io/blog/archives/2017/index.html">
+<meta name="description" content="question提问：什么是函数副作用 answer回答：首先，要了解什么是纯函数,纯函数对于给定相同的输入，总是产生相同的输入，如下函数12345var z = 10;function add(a,b) &amp;#123;    return a+b&amp;#125;//函数add既没有读取z，也没有写入z变量 所以一个函数对外部没有任何影响就是纯函数，那么相应的，如果以函数对外部产生不可预知的影响，类似接">
+<meta name="keywords" content="js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="函数副作用">
+<meta property="og:url" content="http://wobegoone.github.io/blog/2017/08/09/code/函数副作用/index.html">
 <meta property="og:site_name" content="圈圈的世界">
-<meta property="og:description" content="一生倏忽，一世渺然">
+<meta property="og:description" content="question提问：什么是函数副作用 answer回答：首先，要了解什么是纯函数,纯函数对于给定相同的输入，总是产生相同的输入，如下函数12345var z = 10;function add(a,b) &amp;#123;    return a+b&amp;#125;//函数add既没有读取z，也没有写入z变量 所以一个函数对外部没有任何影响就是纯函数，那么相应的，如果以函数对外部产生不可预知的影响，类似接">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-12-02T09:09:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="圈圈的世界">
-<meta name="twitter:description" content="一生倏忽，一世渺然">
+<meta name="twitter:title" content="函数副作用">
+<meta name="twitter:description" content="question提问：什么是函数副作用 answer回答：首先，要了解什么是纯函数,纯函数对于给定相同的输入，总是产生相同的输入，如下函数12345var z = 10;function add(a,b) &amp;#123;    return a+b&amp;#125;//函数add既没有读取z，也没有写入z变量 所以一个函数对外部没有任何影响就是纯函数，那么相应的，如果以函数对外部产生不可预知的影响，类似接">
 
 
 
@@ -132,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://wobegoone.github.io/blog/archives/2017/"/>
+  <link rel="canonical" href="http://wobegoone.github.io/blog/2017/08/09/code/函数副作用/"/>
 
 
 
 
 
-  <title>归档 | 圈圈的世界</title>
+  <title>函数副作用 | 圈圈的世界</title>
   
 
 
@@ -163,7 +165,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -267,222 +269,175 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wobegoone.github.io/blog/blog/2017/08/09/code/函数副作用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Baoman Wu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="圈圈的世界">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">函数副作用</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-09T12:53:38+08:00">
+                2017-08-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 5 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/编程指南/" itemprop="url" rel="index">
+                    <span itemprop="name">编程指南</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/blog/2017/12/02/bug/react/" itemprop="url">
-              
-                <span itemprop="name">react bug 记录</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-02T16:55:06+08:00"
-              content="2017-12-02" >
-          12-02
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/blog/2017/08/09/code/函数副作用/" itemprop="url">
-              
-                <span itemprop="name">函数副作用</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-09T12:53:38+08:00"
-              content="2017-08-09" >
-          08-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/blog/2017/08/07/code/sequelize对象返回/" itemprop="url">
-              
-                <span itemprop="name">sequelize对象返回</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-07T12:30:08+08:00"
-              content="2017-08-07" >
-          08-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/blog/2017/08/06/read/JavaScript高级程序设计/" itemprop="url">
-              
-                <span itemprop="name">JavaScript高级程序设计</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-06T10:08:20+08:00"
-              content="2017-08-06" >
-          08-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+        <h2 id="question"><a href="#question" class="headerlink" title="question"></a>question</h2><p>提问：什么是函数副作用</p>
+<h2 id="answer"><a href="#answer" class="headerlink" title="answer"></a>answer</h2><p>回答：<br>首先，要了解什么是纯函数,纯函数对于给定相同的输入，总是产生相同的输入，如下函数<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> z = <span class="number">10</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span><span class="params">(a,b)</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> a+b</div><div class="line">&#125;</div><div class="line"><span class="comment">//函数add既没有读取z，也没有写入z变量</span></div></pre></td></tr></table></figure></p>
+<p>所以一个函数对外部没有任何影响就是纯函数，那么相应的，<br>如果以函数对外部产生不可预知的影响，类似接口调用，操作数据库等等<br>那么这样的影响就称为函数副作用</p>
+<h2 id="knowleadge"><a href="#knowleadge" class="headerlink" title="knowleadge"></a>knowleadge</h2>
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/blog/2017/08/05/code/css类名权重/" itemprop="url">
-              
-                <span itemprop="name">css类名权重</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-05T10:57:17+08:00"
-              content="2017-08-05" >
-          08-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/js/" rel="tag"># js</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/2017/08/07/code/sequelize对象返回/" rel="next" title="sequelize对象返回">
+                <i class="fa fa-chevron-left"></i> sequelize对象返回
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/2017/12/02/bug/react/" rel="prev" title="react bug 记录">
+                react bug 记录 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -490,6 +445,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -510,8 +469,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/blog/images/avatar.gif"
@@ -573,6 +541,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#question"><span class="nav-number">1.</span> <span class="nav-text">question</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#answer"><span class="nav-number">2.</span> <span class="nav-text">answer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#knowleadge"><span class="nav-number">3.</span> <span class="nav-text">knowleadge</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -686,11 +670,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.2"></script>
+
 
 
   
