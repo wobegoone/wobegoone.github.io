@@ -78,7 +78,7 @@
 <link href="/blog/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="sequelize," />
+  <meta name="keywords" content="css," />
 
 
 
@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="question情景：sequelize返回result没有新增的对象1234567891011userList.forEach((_u) =&amp;gt; &amp;#123;    _u.cellNo = &apos;*&apos;    let tempCount = 0    contactList.forEach((contactItem)=&amp;gt;&amp;#123;        if(contactItem.userId">
-<meta name="keywords" content="sequelize">
+<meta name="description" content="[日期]2017-12-01[问题]标签中文字截断不显示’…’ [原因]以下属性需要作用块级元素中，行内元素不起效果1234width: 100px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; [怎么发现的]在标签中添加文字截断样式无效 [修复]1234567891011&amp;lt;a href=&quot;#&quot;&amp;gt;    &amp;l">
+<meta name="keywords" content="css">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sequelize对象返回">
-<meta property="og:url" content="http://wobegoone.github.io/blog/2017/08/07/code/sequelize对象返回/index.html">
+<meta property="og:title" content="css bug 记录">
+<meta property="og:url" content="http://wobegoone.github.io/blog/2017/12/03/bug/css/index.html">
 <meta property="og:site_name" content="圈圈的世界">
-<meta property="og:description" content="question情景：sequelize返回result没有新增的对象1234567891011userList.forEach((_u) =&amp;gt; &amp;#123;    _u.cellNo = &apos;*&apos;    let tempCount = 0    contactList.forEach((contactItem)=&amp;gt;&amp;#123;        if(contactItem.userId">
+<meta property="og:description" content="[日期]2017-12-01[问题]标签中文字截断不显示’…’ [原因]以下属性需要作用块级元素中，行内元素不起效果1234width: 100px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; [怎么发现的]在标签中添加文字截断样式无效 [修复]1234567891011&amp;lt;a href=&quot;#&quot;&amp;gt;    &amp;l">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-03T03:00:26.000Z">
+<meta property="og:updated_time" content="2017-12-03T03:11:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sequelize对象返回">
-<meta name="twitter:description" content="question情景：sequelize返回result没有新增的对象1234567891011userList.forEach((_u) =&amp;gt; &amp;#123;    _u.cellNo = &apos;*&apos;    let tempCount = 0    contactList.forEach((contactItem)=&amp;gt;&amp;#123;        if(contactItem.userId">
+<meta name="twitter:title" content="css bug 记录">
+<meta name="twitter:description" content="[日期]2017-12-01[问题]标签中文字截断不显示’…’ [原因]以下属性需要作用块级元素中，行内元素不起效果1234width: 100px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; [怎么发现的]在标签中添加文字截断样式无效 [修复]1234567891011&amp;lt;a href=&quot;#&quot;&amp;gt;    &amp;l">
 
 
 
@@ -134,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://wobegoone.github.io/blog/2017/08/07/code/sequelize对象返回/"/>
+  <link rel="canonical" href="http://wobegoone.github.io/blog/2017/12/03/bug/css/"/>
 
 
 
 
 
-  <title>sequelize对象返回 | 圈圈的世界</title>
+  <title>css bug 记录 | 圈圈的世界</title>
   
 
 
@@ -283,7 +283,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wobegoone.github.io/blog/blog/2017/08/07/code/sequelize对象返回/">
+    <link itemprop="mainEntityOfPage" href="http://wobegoone.github.io/blog/blog/2017/12/03/bug/css/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Baoman Wu">
@@ -300,7 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">sequelize对象返回</h1>
+          <h1 class="post-title" itemprop="name headline">css bug 记录</h1>
         
 
         <div class="post-meta">
@@ -312,8 +312,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-07T12:30:08+08:00">
-                2017-08-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-03T10:44:45+08:00">
+                2017-12-03
               </time>
             
 
@@ -335,8 +335,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/编程指南/" itemprop="url" rel="index">
-                    <span itemprop="name">编程指南</span>
+                  <a href="/blog/categories/bug记录/" itemprop="url" rel="index">
+                    <span itemprop="name">bug记录</span>
                   </a>
                 </span>
 
@@ -372,10 +372,10 @@
       
 
       
-        <h2 id="question"><a href="#question" class="headerlink" title="question"></a>question</h2><p>情景：sequelize返回result没有新增的对象<br><figure class="highlight sqf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">userList.<span class="keyword">forEach</span>((<span class="variable">_u</span>) =&gt; &#123;</div><div class="line">    <span class="variable">_u</span>.cellNo = <span class="string">'*'</span></div><div class="line">    let tempCount = <span class="number">0</span></div><div class="line">    contactList.<span class="keyword">forEach</span>((contactItem)=&gt;&#123;</div><div class="line">        <span class="keyword">if</span>(contactItem.userId == <span class="variable">_u</span>.id)&#123;</div><div class="line">            tempCount++;</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line">    <span class="variable">_u</span>.contactCount = tempCount;</div><div class="line">&#125;)</div><div class="line">result.<span class="built_in">list</span> = userList;</div></pre></td></tr></table></figure></p>
-<p>提问：为什么result.list中有contactCount但是接口中没有返回</p>
-<h2 id="answer"><a href="#answer" class="headerlink" title="answer"></a>answer</h2><p>回答：需改写成 _u.dataValues.contactCount = tempCount;</p>
-<h2 id="knowleadge"><a href="#knowleadge" class="headerlink" title="knowleadge"></a>knowleadge</h2><p>sequlize接口返回的数据，存放在dataValues中</p>
+        <p>[日期]<br>2017-12-01<br>[问题]<br><a>标签中文字截断不显示’…’</a></p>
+<p>[原因]<br>以下属性需要作用块级元素中，行内元素不起效果<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">width</span>: 100<span class="selector-tag">px</span>;</div><div class="line"><span class="selector-tag">overflow</span>: <span class="selector-tag">hidden</span>;</div><div class="line"><span class="selector-tag">white-space</span>: <span class="selector-tag">nowrap</span>;</div><div class="line"><span class="selector-tag">text-overflow</span>: <span class="selector-tag">ellipsis</span>;</div></pre></td></tr></table></figure></p>
+<p>[怎么发现的]<br>在<a>标签中添加文字截断样式无效</a></p>
+<p>[修复]<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span> = <span class="string">"font-ellipsis"</span> &gt;</span>aaa<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="css">    <span class="selector-class">.font-ellipsis</span>&#123;</span></div><div class="line"><span class="undefined">        width: 100px;</span></div><div class="line"><span class="undefined">        overflow: hidden;</span></div><div class="line"><span class="undefined">        white-space: nowrap;</span></div><div class="line"><span class="undefined">        text-overflow: ellipsis;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -393,7 +393,7 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/sequelize/" rel="tag"># sequelize</a>
+            <a href="/blog/tags/css/" rel="tag"># css</a>
           
         </div>
       
@@ -406,8 +406,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/2017/08/06/read/JavaScript高级程序设计/" rel="next" title="JavaScript高级程序设计">
-                <i class="fa fa-chevron-left"></i> JavaScript高级程序设计
+              <a href="/blog/2017/12/02/bug/react/" rel="next" title="react bug 记录">
+                <i class="fa fa-chevron-left"></i> react bug 记录
               </a>
             
           </div>
@@ -416,8 +416,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/2017/08/09/code/函数副作用/" rel="prev" title="函数副作用">
-                函数副作用 <i class="fa fa-chevron-right"></i>
+              <a href="/blog/2017/12/03/code/css常用技巧汇总/" rel="prev" title="css常用技巧汇总">
+                css常用技巧汇总 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -470,17 +470,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/blog/images/avatar.gif"
@@ -542,22 +533,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#question"><span class="nav-number">1.</span> <span class="nav-text">question</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#answer"><span class="nav-number">2.</span> <span class="nav-text">answer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#knowleadge"><span class="nav-number">3.</span> <span class="nav-text">knowleadge</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
