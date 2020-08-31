@@ -105,3 +105,4 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/wobegoone/wobegoone.github.io.git
+  branch: gh-pages
