@@ -10,3 +10,4 @@ comments: true
 ---
 
 1. nuxt入门知识
+2. 掌握必要知识
